@@ -9,6 +9,7 @@ namespace ProfSpec.Models
     /// <summary>Компетенция позиции </summary>
     public class CompetencePosition
     {
+        public int CompetencePositionID { get; set; }
         [Display(Name = "Компетенция")]
         public int CompetenceID { get; set; }
         [Display(Name = "Позиция")]

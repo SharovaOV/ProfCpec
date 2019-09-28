@@ -9,6 +9,7 @@ namespace ProfSpec.Models
     /// <summary>Хобби работника</summary>
     public class HobbyWorker
     {
+        public int HobbyWorkerID { get; set; }
         [Display(Name = "Работник")]
         public int WorkerID { get; set; }
         [Display(Name = "Хобби работника")]

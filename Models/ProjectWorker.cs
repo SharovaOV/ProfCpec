@@ -8,6 +8,7 @@ namespace ProfSpec.Models
 {/// <summary>Участник проекта </summary>
     public class ProjectWorker
     {
+        public int ProjectWorkerID { get; set; }
         [Display(Name = "Проект")]
         public int ProjectID { get; set; }
         [Display(Name = "Участник проекта")]

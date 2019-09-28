@@ -9,6 +9,7 @@ namespace ProfSpec.Models
 /// <summary>Заявка на переквалификацию </summary>
     public class ApplicationReclassification
     {
+        public int ApplicationReclassificationID { get; set; }
         public int ApplicationCourseID { get; set; }
         [Display(Name = "Работник")]
         public int WorkerID { get; set; }

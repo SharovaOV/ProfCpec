@@ -47,9 +47,9 @@ namespace ProfSpec.Models
         }
 
         public ICollection<CompetenceWorker> CompetenceWorkers { get; set; }
-        public Project SupervisedProject { get; set; }
-
-        public IComparable<Project> Projects { get; set; }
+        //public Project SupervisedProject { get; set; }
+        [NotMapped]
+        public IComparable<ProjectWorker> ProjectWorker { get; set; }
         public ICollection<HobbyWorker> HobbyWorkers { get; set; }
         public ICollection<InterestWorker> InterestsWorker { get; set; }
         public ICollection<ApplicationCourse> ApplicationCourses { get; set; }

@@ -1,0 +1,54 @@
+﻿@model ProfSpec.Models.Position
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Position</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PositionID" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rating" class="control-label"></label>
+                <input asp-for="Rating" class="form-control" />
+                <span asp-validation-for="Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SalaryRate" class="control-label"></label>
+                <input asp-for="SalaryRate" class="form-control" />
+                <span asp-validation-for="SalaryRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Count" class="control-label"></label>
+                <input asp-for="Count" class="form-control" />
+                <span asp-validation-for="Count" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Volunteerism" /> @Html.DisplayNameFor(model => model.Volunteerism)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
