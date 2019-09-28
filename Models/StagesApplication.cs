@@ -6,12 +6,11 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace ProfSpec.Models
 {
-    public class Hobby
+    /// <summary>Стадия запроса сотрудника</summary>
+    public class StagesApplication
     {
-        public int HobbyID { get; set; }
-        [Display(Name="Название хобби")]
+        public int StagesApplicationID { get; set; }
+        [Display(Name = "Состояние")]
         public string Name { get; set; }
-
-        public ICollection<HobbyWorker> HobbyWorkers { get; set; }
     }
 }

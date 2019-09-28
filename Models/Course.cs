@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProfSpec.Models
 {
+    /// <summary>Курс </summary>
     public class Course
     {
         [Display(Name="Номер курса")]
@@ -14,5 +15,11 @@ namespace ProfSpec.Models
 
         [Display(Name= "Наименованbt курса")]
         public string Name { get; set; }
+        [Display(Name="Сыылка на курс")]
+        public string LinkCourse { get; set; }
+
+       public ICollection<CompetenceCourse> CompetenceCourses { get; set; }
+        public ICollection<ApplicationCourse> ApplicationCourses { get; set; }
+
     }
 }
