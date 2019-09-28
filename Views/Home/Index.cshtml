@@ -8,7 +8,18 @@
 
 @if (SignInManager.IsSignedIn(User))
 {
-    <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Добавление аккаунта сотрудника</a>
+    if (User.Identity.Name == "admin@profspec.ru")
+    {
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Добавление аккаунта сотрудника</a>
+    }
+    else if (User.Identity.Name == "hr@profspec.ru")
+    {
+        <p>Интерфейс HR специалиста</p>
+    }
+    else
+    {
+        <p>Интерфейс сотрудника</p>
+    }
 }
 else
 {
