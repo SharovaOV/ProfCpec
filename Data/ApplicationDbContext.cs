@@ -52,6 +52,14 @@ namespace ProfSpec.Data
             modelBuilder.Entity<StagesApplication>().ToTable("StagesApplication");
             modelBuilder.Entity<StagesRequalification>().ToTable("StagesRequalification");
             modelBuilder.Entity<Worker>().ToTable("Worker");
+
+            modelBuilder.Entity<CompetenceCourse>().HasKey(c => new { c.CompetenceID, c.CourseID });
+            modelBuilder.Entity<CompetencePosition>().HasKey(c => new { c.CompetenceID, c.PositionID });
+            modelBuilder.Entity<CompetenceWorker>().HasKey(c => new { c.CompetenceID, c.Worker });
+            modelBuilder.Entity<HobbyWorker>().HasKey(c => new { c.HobbyID, c.WorkerID });
+            modelBuilder.Entity<InterestWorker>().HasKey(c => new { c.InterestID, c.WorkerID });
+            modelBuilder.Entity<ProjectWorker>().HasKey(c => new { c.ProjectID, c.WorkerID });
+
         }
 
 
