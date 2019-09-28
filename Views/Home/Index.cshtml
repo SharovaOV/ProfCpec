@@ -10,7 +10,8 @@
 {
     if (User.Identity.Name == "admin@profspec.ru")
     {
-        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Добавление аккаунта сотрудника</a>
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index">Настройка аккаунта администратора</a>
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Добавить пользователя системы</a>
     }
     else if (User.Identity.Name == "hr@profspec.ru")
     {
