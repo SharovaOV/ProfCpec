@@ -1,0 +1,42 @@
+﻿@model ProfSpec.Models.Reclassification
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Reclassification</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ReclassificationMentor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ReclassificationMentor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Worker)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Worker.ID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Position)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Position.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StagesRequalification)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StagesRequalification.StagesRequalificationID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ReclassificationID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

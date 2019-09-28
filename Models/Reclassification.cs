@@ -17,12 +17,12 @@ namespace ProfSpec.Models
         [Display(Name = "Стадия реализации")]
         public  int StagesRequalificationID { get; set; }
         [Display(Name = "Назначеный ментор")]
-        public int WorkerID_Mentor { get; set; }
+        public int ReclassificationMentor{ get; set; }
         
 
         public Worker Worker { get; set; }
         public Position Position { get; set; }
         public StagesRequalification StagesRequalification { get; set; }
-        public Worker Mentor { get; set; }
+        public ReclassificationMentor Mentor { get; set; }
     }
 }

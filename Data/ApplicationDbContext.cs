@@ -23,6 +23,15 @@ namespace ProfSpec.Data
         public DbSet<ProfSpec.Models.Worker> Worker { get; set; }
         public DbSet<ProfSpec.Models.CompetenceWorker> CompetenceWorker { get; set; }
         public DbSet<ProfSpec.Models.HobbyWorker> HobbyWorker { get; set; }
+        public DbSet<ProfSpec.Models.InterestWorker> InterestWorker { get; set; }
+        public DbSet<ProfSpec.Models.Project> Project { get; set; }
+        public DbSet<ProfSpec.Models.ProjectWorker> ProjectWorker { get; set; }
+        public DbSet<ProfSpec.Models.StagesApplication> StagesApplication { get; set; }
+        public DbSet<ProfSpec.Models.StagesRequalification> StagesRequalification { get; set; }
+        public DbSet<ProfSpec.Models.ApplicationReclassification> ApplicationReclassification { get; set; }
+        public DbSet<ProfSpec.Models.ApplicationCourse> ApplicationCourse { get; set; }
+        public DbSet<ProfSpec.Models.ReclassificationMentor> ReclassificationMentor { get; set; }
+        public DbSet<ProfSpec.Models.Reclassification> Reclassification { get; set; }
         //public  DbSet<ApplicationCourse> ApplicationCourses{ get; set; }
         //public DbSet<ApplicationReclassification> ApplicationReclassifications { get; set; }
         //public DbSet<Competence> Competences { get; set; }
