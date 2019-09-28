@@ -14,5 +14,10 @@ namespace ProfSpec.Models
 
         [Display(Name= "Наименованbt курса")]
         public string Name { get; set; }
+        [Display(Name="Сыылка на курс")]
+        public string LinkCourse { get; set; }
+
+        ICollection<CompetenceCourse> CompetenceCourses { get; set; }
+
     }
 }
