@@ -6,16 +6,15 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace ProfSpec.Models
 {
-    /// <summary>Проект </summary>
-    public class Project
+    /// <summary>Интерес работника </summary>
+    public class InterestWorker
     {
-        public int ProjectID { get; set; }
-        [Display(Name = "Наименование проекта")]
-        public string Name { get; set; }
-        [Display(Name = "Начальник проекта")]
+        [Display(Name ="Интерес")]
+        public int InterestID { get; set; }
+        [Display(Name = "Работник")]
         public int WorkerID { get; set; }
 
-
+        public Interest Interest { get; set; }
         public Worker Worker { get; set; }
     }
 }

@@ -11,5 +11,7 @@ namespace ProfSpec.Models
         public int HobbyID { get; set; }
         [Display(Name="Название хобби")]
         public string Name { get; set; }
+
+        public ICollection<HobbyWorker> HobbyWorkers { get; set; }
     }
 }

@@ -6,12 +6,11 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace ProfSpec.Models
 {
-    /// <summary>ЗНаправление области знаний </summary>
-    public class DirectionsOfTraining
+    /// <summary>Стадия запроса сотрудника</summary>
+    public class StagesApplication
     {
-        [Key]
-        public int DirectionsID { get; set; }
-        [Display(Name="Наименование направления")]
+        public int StagesApplicationID { get; set; }
+        [Display(Name = "Состояние")]
         public string Name { get; set; }
     }
 }

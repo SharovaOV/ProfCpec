@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace ProfSpec.Models
 {
+    /// <summary>Компетенция работника </summary>
     public class CompetenceWorker
     {
         [Display(Name = "Компетенция")]

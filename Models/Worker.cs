@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace ProfSpec.Models
 {
+    /// <summary>Работник </summary>
     public class Worker
     {
         public int ID { get; set; }
@@ -49,10 +50,10 @@ namespace ProfSpec.Models
         public Project SupervisedProject { get; set; }
 
         public IComparable<Project> Projects { get; set; }
-
-
-
-
+        public ICollection<HobbyWorker> HobbyWorkers { get; set; }
+        public ICollection<InterestWorker> InterestsWorker { get; set; }
+        public ICollection<ApplicationCourse> ApplicationCourses { get; set; }
+        public ICollection<ApplicationReclassification> ApplicationReclassifications { get; set; }
 
     }
 }
