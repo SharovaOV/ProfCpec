@@ -17,6 +17,12 @@ namespace ProfSpec.Data
         public DbSet<ProfSpec.Models.Competence> Competence { get; set; }
         public DbSet<ProfSpec.Models.Course> Course { get; set; }
         public DbSet<ProfSpec.Models.Position> Position { get; set; }
+        public DbSet<ProfSpec.Models.RolOfProject> RolOfProject { get; set; }
+        public DbSet<ProfSpec.Models.CompetencePosition> CompetencePosition { get; set; }
+        public DbSet<ProfSpec.Models.CompetenceCourse> CompetenceCourse { get; set; }
+        public DbSet<ProfSpec.Models.Worker> Worker { get; set; }
+        public DbSet<ProfSpec.Models.CompetenceWorker> CompetenceWorker { get; set; }
+        public DbSet<ProfSpec.Models.HobbyWorker> HobbyWorker { get; set; }
         //public  DbSet<ApplicationCourse> ApplicationCourses{ get; set; }
         //public DbSet<ApplicationReclassification> ApplicationReclassifications { get; set; }
         //public DbSet<Competence> Competences { get; set; }
